@@ -18,3 +18,15 @@
 #define COCOAPODS_VERSION_MINOR_AsyncDisplayKit_ASDealloc2MainObject 2
 #define COCOAPODS_VERSION_PATCH_AsyncDisplayKit_ASDealloc2MainObject 2
 
+// Dollar
+#define COCOAPODS_POD_AVAILABLE_Dollar
+#define COCOAPODS_VERSION_MAJOR_Dollar 3
+#define COCOAPODS_VERSION_MINOR_Dollar 0
+#define COCOAPODS_VERSION_PATCH_Dollar 3
+
+// RFSectionDelta
+#define COCOAPODS_POD_AVAILABLE_RFSectionDelta
+#define COCOAPODS_VERSION_MAJOR_RFSectionDelta 1
+#define COCOAPODS_VERSION_MINOR_RFSectionDelta 3
+#define COCOAPODS_VERSION_PATCH_RFSectionDelta 1
+

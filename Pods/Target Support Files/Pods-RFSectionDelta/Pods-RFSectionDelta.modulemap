@@ -1,0 +1,6 @@
+framework module RFSectionDelta {
+  umbrella header "Pods-RFSectionDelta-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -2,9 +2,13 @@ PODS:
   - AsyncDisplayKit (1.2.2):
     - AsyncDisplayKit/ASDealloc2MainObject (= 1.2.2)
   - AsyncDisplayKit/ASDealloc2MainObject (1.2.2)
+  - Dollar (3.0.3)
+  - RFSectionDelta (1.3.1)
 
 DEPENDENCIES:
   - AsyncDisplayKit (from `https://github.com/facebook/AsyncDisplayKit.git`)
+  - Dollar
+  - RFSectionDelta
 
 EXTERNAL SOURCES:
   AsyncDisplayKit:
@@ -17,5 +21,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AsyncDisplayKit: 70634bfc4bce38b0de85fec7da20a669fdbc8809
+  Dollar: ae37f1da42cdc16061fcc1e91a070281b207f5c8
+  RFSectionDelta: d64ef52937c3c4b4e42f8e214b486c5ce27f6bd1
 
 COCOAPODS: 0.37.2

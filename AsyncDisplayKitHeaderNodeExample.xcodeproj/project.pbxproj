@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		641B8A15357408246A1D4824 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F1D990A131C419E616A53 /* libPods.a */; };
+		606737F4F7964D478AC12ADA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD5D4B15DF69FCE4FCCFD8B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C45828EA1B7CCBB00002AA53 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45828E91B7CCBB00002AA53 /* ViewModel.swift */; };
+		C45828EC1B7CCEB30002AA53 /* SectionedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45828EB1B7CCEB30002AA53 /* SectionedDataSource.swift */; };
+		C45828EE1B7CEE940002AA53 /* ASTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45828ED1B7CEE940002AA53 /* ASTableViewManager.swift */; };
 		C4823A841B7C10D2004F8B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4823A831B7C10D2004F8B87 /* AppDelegate.swift */; };
 		C4823A861B7C10D2004F8B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4823A851B7C10D2004F8B87 /* ViewController.swift */; };
-		C4823A891B7C10D2004F8B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4823A871B7C10D2004F8B87 /* Main.storyboard */; };
 		C4823A8B1B7C10D2004F8B87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4823A8A1B7C10D2004F8B87 /* Images.xcassets */; };
 		C4823A8E1B7C10D2004F8B87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4823A8C1B7C10D2004F8B87 /* LaunchScreen.xib */; };
 		C4823A9A1B7C10D2004F8B87 /* AsyncDisplayKitHeaderNodeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4823A991B7C10D2004F8B87 /* AsyncDisplayKitHeaderNodeExampleTests.swift */; };
@@ -28,13 +30,15 @@
 
 /* Begin PBXFileReference section */
 		24774373D903D5ACB4C7DA2E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		4A5F1D990A131C419E616A53 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7977840309D858C7AC09F568 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9BD5D4B15DF69FCE4FCCFD8B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45828E91B7CCBB00002AA53 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C45828EB1B7CCEB30002AA53 /* SectionedDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionedDataSource.swift; sourceTree = "<group>"; };
+		C45828ED1B7CEE940002AA53 /* ASTableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTableViewManager.swift; sourceTree = "<group>"; };
 		C4823A7E1B7C10D1004F8B87 /* AsyncDisplayKitHeaderNodeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncDisplayKitHeaderNodeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4823A821B7C10D1004F8B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4823A831B7C10D2004F8B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4823A851B7C10D2004F8B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C4823A881B7C10D2004F8B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4823A8A1B7C10D2004F8B87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C4823A8D1B7C10D2004F8B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C4823A931B7C10D2004F8B87 /* AsyncDisplayKitHeaderNodeExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncDisplayKitHeaderNodeExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				641B8A15357408246A1D4824 /* libPods.a in Frameworks */,
+				606737F4F7964D478AC12ADA /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				C4823A831B7C10D2004F8B87 /* AppDelegate.swift */,
+				C45828ED1B7CEE940002AA53 /* ASTableViewManager.swift */,
+				C45828EB1B7CCEB30002AA53 /* SectionedDataSource.swift */,
 				C4823A851B7C10D2004F8B87 /* ViewController.swift */,
-				C4823A871B7C10D2004F8B87 /* Main.storyboard */,
+				C45828E91B7CCBB00002AA53 /* ViewModel.swift */,
 				C4823A8A1B7C10D2004F8B87 /* Images.xcassets */,
 				C4823A8C1B7C10D2004F8B87 /* LaunchScreen.xib */,
 				C4823A811B7C10D1004F8B87 /* Supporting Files */,
@@ -131,7 +137,7 @@
 		FE0694D876C3F137AB7B5C25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A5F1D990A131C419E616A53 /* libPods.a */,
+				9BD5D4B15DF69FCE4FCCFD8B /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				C4823A7B1B7C10D1004F8B87 /* Frameworks */,
 				C4823A7C1B7C10D1004F8B87 /* Resources */,
 				62AF79F705E52C51C267FD88 /* Copy Pods Resources */,
+				A4164DD4CD587A2C4A8284DE /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,7 +225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4823A891B7C10D2004F8B87 /* Main.storyboard in Resources */,
 				C4823A8E1B7C10D2004F8B87 /* LaunchScreen.xib in Resources */,
 				C4823A8B1B7C10D2004F8B87 /* Images.xcassets in Resources */,
 			);
@@ -264,6 +270,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A4164DD4CD587A2C4A8284DE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,6 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4823A861B7C10D2004F8B87 /* ViewController.swift in Sources */,
+				C45828EE1B7CEE940002AA53 /* ASTableViewManager.swift in Sources */,
+				C45828EC1B7CCEB30002AA53 /* SectionedDataSource.swift in Sources */,
+				C45828EA1B7CCBB00002AA53 /* ViewModel.swift in Sources */,
 				C4823A841B7C10D2004F8B87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,14 +319,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C4823A871B7C10D2004F8B87 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4823A881B7C10D2004F8B87 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C4823A8C1B7C10D2004F8B87 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
