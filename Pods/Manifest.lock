@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   AsyncDisplayKit:
-    :commit: 7c78dfdd5f7af1884220ff4d6851b4d226b90788
+    :commit: e93e97ad5f38b6fa1908869b68258ea7e1a10fc2
     :git: https://github.com/facebook/AsyncDisplayKit.git
 
 SPEC CHECKSUMS:
