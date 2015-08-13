@@ -89,6 +89,20 @@ class ViewController: UIViewController, ASTableViewDelegate, SectionedDataSource
         return dataSource.tableView(tableView, viewForHeaderInSection: section)
     }
     
+    func tableView(tableView: UITableView!, willDisplayHeaderView view: UIView!, forSection section: Int) {
+        if let header = dataSource.fetchHeaderNode(section) {
+            header.recursivelySetDisplaySuspended(false)
+        }
+    }
+    
+    func tableView(tableView: UITableView!, didEndDisplayingHeaderView view: UIView!, forSection section: Int) {
+        if let header = dataSource.fetchHeaderNode(section) {
+            header.recursivelySetDisplaySuspended(true)
+            header.view.removeFromSuperview()
+            header.recursivelyClearContents()
+        }
+    }
+    
     func tableView(tableView: UITableView!, heightForFooterInSection section: Int) -> CGFloat {
         return 20
     }
