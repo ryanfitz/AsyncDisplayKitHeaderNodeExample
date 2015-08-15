@@ -90,7 +90,7 @@ class ViewController: UIViewController, ASTableViewDelegate, SectionedDataSource
     }
     
     func tableView(tableView: UITableView!, willDisplayHeaderView view: UIView!, forSection section: Int) {
-        if let header = dataSource.fetchHeaderNode(section) {
+        if let header = dataSource.fetchHeaderNode(section) where header.displaySuspended {
             header.recursivelySetDisplaySuspended(false)
         }
     }
@@ -98,7 +98,7 @@ class ViewController: UIViewController, ASTableViewDelegate, SectionedDataSource
     func tableView(tableView: UITableView!, didEndDisplayingHeaderView view: UIView!, forSection section: Int) {
         if let header = dataSource.fetchHeaderNode(section) {
             header.recursivelySetDisplaySuspended(true)
-            header.view.removeFromSuperview()
+//            header.layer.removeFromSuperlayer()
             header.recursivelyClearContents()
         }
     }

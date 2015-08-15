@@ -187,19 +187,22 @@ class SectionedDataSource : NSObject, ASTableViewDataSource  {
         
         if view == nil {
             view = UITableViewHeaderFooterView(reuseIdentifier: "Header")
+            view!.backgroundView = UIImageView()
         }
         
-        view?.backgroundView = UIImageView()
-        
-        let contentView = view!.contentView
-        contentView.backgroundColor = UIColor.clearColor()
-        
-        for subview in contentView.subviews {
-            subview.removeFromSuperview()
-        }
-        
-        if let header = fetchHeaderNode(section) {
-            contentView.addSubnode(header)
+        if let header = fetchHeaderNode(section), let contentView = view?.contentView where header.view.superview != contentView {
+            contentView.backgroundColor = UIColor.clearColor()
+            
+            for subview in contentView.subviews {
+                subview.removeFromSuperview()
+            }
+            
+            // force any headers that are about to come into view to have display enabled
+            if (header.displaySuspended) {
+                header.recursivelySetDisplaySuspended(false)
+            }
+            
+            contentView.addSubview(header.view)
         }
         
         return view
